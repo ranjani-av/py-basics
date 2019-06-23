@@ -1,0 +1,8 @@
+table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
+>>> for chair, cloth in table.items():
+	print(f'{chair:10} ==> {cloth:10d}')
+
+	
+Sjoerd     ==>       4127
+Jack       ==>       4098
+Dcab       ==>       7678
