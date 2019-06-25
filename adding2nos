@@ -1,0 +1,18 @@
+def inputt():
+    x=int(input())
+    y=int(input())
+    t=x,y
+    return t
+
+def compute(x,y):
+    ans=x+y
+    return ans
+
+def display(b):
+    print("The sum is",b)
+
+
+
+a=inputt()
+b=compute(*a)
+c=display(b)
