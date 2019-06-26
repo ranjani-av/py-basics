@@ -1,0 +1,20 @@
+def input_1():
+    a=int(input("Enter the coefficient of x^2:"))
+    b=int(input("Enter the coefficient of x:"))
+    c=int(input("Enter the constant:"))
+    return a,b,c
+
+def compute_2(a,b,c):
+    d=((b**2)-(4*a*c))
+    e=(-b)
+    f=(e+(d**0.5))/(2*a)
+    g=(e-(d**0.5))/(2*a)
+    return f,g
+
+def show_3(x,y):
+    print("The solution of the given quadratic equation is:", (x,y))
+
+import cmath
+s=input_1()
+t=compute_2(*s)
+u=show_3(*t)
