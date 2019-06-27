@@ -1,3 +1,8 @@
-d = {'a': 'Apple', 'b': 'ball', 'c': 'cat'}
+a={'a': 'b', 'c': 'd', 'e': 'f', 'g': 'h'}
 
-res = ",".join(("{}={}".format(*i) for i in d.items()))
+def DictToStr():
+    b = ",".join("{}={}".format(*i) for i in a.items())
+    c=str(b)
+    print(c)
+
+x=DictToStr()
