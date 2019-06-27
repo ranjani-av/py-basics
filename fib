@@ -1,10 +1,8 @@
 def fibo(n):
-    l=[]
     a, b = 0, 1
     while a < n:
+        yield(a)
         a, b = b, a+b
-        l.append(a)
-    return(l)
 
 n=int(input("Enter n:"))
 fibo(n)
