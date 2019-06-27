@@ -1,11 +1,15 @@
-def fibo(n):
-    a, b = 0, 1
-    while a < n:
-        yield(a)
-        a, b = b, a+b
+class Fibonacci:
+    def __init__(self,n):
+        self.n=n
 
-n=int(input("Enter n:"))
-fibo(n)
+    def fibo(self):
+        self.a=0
+        self.b=1
+        while self.a < self.n:
+            yield(self.a)
+            self.a, self.b = self.b, self.a+self.b
 
-for i in fibo(n):
+x=Fibonacci(10)
+
+for i in x.fibo():
     print(i)
