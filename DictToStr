@@ -1,0 +1,5 @@
+def DictToStr():
+    for k,v in a.items():
+        print(k,v,end=";")
+        for j in (k,v):
+            print(j,end="=")
