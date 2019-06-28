@@ -1,0 +1,14 @@
+class menu:
+    def __init__(self):
+        self.dict1={}
+    def additem(self, name, price):
+        self.dict1.update({name: price})
+        return self.dict1
+    def show(self):
+        for n, p in self.dict1.items():
+            print(n, p)
+            
+m = menu()
+m.additem("idli", 10)
+m.additem("vada", 20)
+m.show()
