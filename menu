@@ -1,30 +1,22 @@
 class menu:
     def __init__(self):
-        self.dict1={}
+        self.menu_items={}
     def additem(self, name, price):
-        self.dict1.update({name: price})
-        return self.dict1
+        self.menu_items[name]=price
+        return self.menu_items
     def show(self):
-        for n, p in self.dict1.items():
+        for n, p in self.menu_items.items():
             print(n, p)
-    def show_item(self):
+    def get_price(self):
         #Search function
         item=input("Enter item name:")
-        print(self.dict1.get(item))
-            
+        print(self.menu_items.get(item))
             
 m = menu()
 m.additem("idli", 10)
 m.additem("vada", 20)
 m.additem("Dosa", 25)
-m.additem("Aloo paratha", 30)
-m.additem("Chats", 15)
 m.additem("Bisi Bele Bath", 50)
 m.additem("Biryani", 45)
-m.additem("Fried Rice", 45)
-m.additem("Noodles", 40)
-m.additem("Ice cream", 20)
-m.additem("Meals", 60)
-m.additem("Pasta", 45)
 m.show()
-m.show_item()
+m.get_price()
