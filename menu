@@ -7,8 +7,24 @@ class menu:
     def show(self):
         for n, p in self.dict1.items():
             print(n, p)
+    def show_item(self, item):
+        #Search function
+        for k ,v in self.dict1.items():
+            if k == item:
+                print(k, v)
+            
             
 m = menu()
 m.additem("idli", 10)
 m.additem("vada", 20)
-m.show()
+m.additem("Dosa", 25)
+m.additem("Aloo paratha", 30)
+m.additem("Chats", 15)
+m.additem("Bisi Bele Bath", 50)
+m.additem("Biryani", 45)
+m.additem("Fried Rice", 45)
+m.additem("Noodles", 40)
+m.additem("Ice cream", 20)
+m.additem("Meals", 60)
+m.additem("Pasta", 45)
+m.show_item("Biryani")
