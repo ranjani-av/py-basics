@@ -17,9 +17,15 @@ class menu:
     def __setitem__(self, item, value):
         self.menu_items[item] = value
         return self
-        
+    def __getitem__(self, item):
+        return self.menu_items[item]
+
+
+
+
 m = menu()
 m.additem("idli", 10)
 m.additem("vada", 20)
-m['rice']=30
-m.show()
+
+>>>m['vada']
+20
