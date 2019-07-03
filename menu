@@ -1,4 +1,4 @@
-class menu:
+class dict:
     def __init__(self):
         self.menu_items={}
     def additem(self, name, price):
@@ -20,12 +20,16 @@ class menu:
     def __getitem__(self, item):
         return self.menu_items[item]
 
+class menu(dict):
+    pass
 
+#Create a parent class
+#create a child class
 
+#Inheritance allows us to define a class
+#that inherits all the methods and properties from another class.
 
 m = menu()
 m.additem("idli", 10)
 m.additem("vada", 20)
-
->>>m['vada']
-20
+m['vada']
