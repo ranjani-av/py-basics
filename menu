@@ -11,12 +11,15 @@ class menu:
         #Search function
         item=input("Enter item name:")
         print(self.menu_items.get(item))
-            
+    def __add__(self, other):
+        self.menu_items[other[0]]=other[1]
+        return self
+    def __setitem__(self, item, value):
+        self.menu_items[item] = value
+        return self
+        
 m = menu()
 m.additem("idli", 10)
 m.additem("vada", 20)
-m.additem("Dosa", 25)
-m.additem("Bisi Bele Bath", 50)
-m.additem("Biryani", 45)
+m['rice']=30
 m.show()
-m.get_price()
