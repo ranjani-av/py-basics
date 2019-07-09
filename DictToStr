@@ -1,7 +1,7 @@
 a={'a': 'b', 'c': 'd', 'e': 'f', 'g': 'h'}
 
 def DictToStr():
-    b = ",".join("{}={}".format(*i) for i in a.items())
+    b = ";".join("{}={}".format(*i) for i in a.items())
     c=str(b)
     print(c)
 
